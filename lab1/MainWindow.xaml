@@ -1,0 +1,229 @@
+﻿<Window x:Class="lab1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab1.viewmodel"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:command="http://www.galasoft.ch/mvvmlight"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="400">
+    <Window.Resources>
+        <!-- Стили -->
+        <Style x:Key="HeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style x:Key="InputTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    <StackPanel>
+        <!-- Заголовки и поля ввода для отрезка 1 -->
+        <TextBlock Text="Отрезок 1" Style="{StaticResource HeaderTextStyle}"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock
+                Text="Начало отрезка:"
+                Style="{StaticResource HeaderTextStyle}"
+                VerticalAlignment="Center"
+                />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Text="X1:"
+                    Style="{StaticResource HeaderTextStyle}"
+                    VerticalAlignment="Center"
+                    />
+                <TextBox
+                    Name="Segment1X1TextBox"
+                    Tag="Введите значение X1" 
+                    Style="{StaticResource InputTextBoxStyle}" 
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Text="{Binding Segment1X1, Mode=TwoWay}"
+                    Margin="34,5,5,5"
+                    />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Text="Y1:" Style="{StaticResource HeaderTextStyle}"
+                    VerticalAlignment="Center"
+                    />
+                <TextBox
+                    x:Name = "Segment1Y1TextBox"
+                    Tag="Введите значение Y1"
+                    Style="{StaticResource InputTextBoxStyle}"
+                    Text="{Binding Segment1Y1, Mode=TwoWay}" 
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Margin="34,5,5,5"
+                    />
+            </StackPanel>
+            <TextBlock
+                Text="Конец отрезка:"
+                Style="{StaticResource HeaderTextStyle}"
+                VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Text="X2:"
+                    Style="{StaticResource HeaderTextStyle}"
+                    VerticalAlignment="Center"
+                    />
+                <TextBox
+                    Tag="Введите значение X2"
+                    Style="{StaticResource InputTextBoxStyle}"
+                    Text="{Binding Segment1X2, Mode=TwoWay}" 
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Margin="34,5,5,5"
+                    />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Text="Y2:"
+                    Style="{StaticResource HeaderTextStyle}"
+                    VerticalAlignment="Center"
+                    />
+                <TextBox
+                    Tag="Введите значение Y2" 
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource InputTextBoxStyle}"
+                    Text="{Binding Segment1Y2, Mode=TwoWay}"
+                    Margin="34,5,5,5"
+                    />
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Разделитель -->
+        <Border BorderThickness="0,5,0,0" BorderBrush="Gray" Margin="5"/>
+
+        <!-- Заголовки и поля ввода для отрезка 1 -->
+        <TextBlock
+            Text="Отрезок 2"
+            Style="{StaticResource HeaderTextStyle}"
+            />
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            >
+            <TextBlock
+                Text="Начало отрезка:"
+                Style="{StaticResource HeaderTextStyle}"
+                VerticalAlignment="Center"
+                />
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock
+                    Text="X1:"
+                    Style="{StaticResource HeaderTextStyle}"
+                    VerticalAlignment="Center"
+                    />
+                <TextBox 
+                    Tag="Введите значение X1"
+                    Style="{StaticResource InputTextBoxStyle}"
+                    Text="{Binding Segment2X1, Mode=TwoWay}"  
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Margin="34,5,5,5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Text="Y1:"
+                    Style="{StaticResource HeaderTextStyle}"
+                    VerticalAlignment="Center"
+                    />
+                <TextBox
+                    Tag="Введите значение Y1" 
+                    Style="{StaticResource InputTextBoxStyle}" 
+                    Text="{Binding Segment2Y1, Mode=TwoWay}"  
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Margin="34,5,5,5"
+                    />
+            </StackPanel>
+            <TextBlock
+                Text="Конец отрезка:"
+                Style="{StaticResource HeaderTextStyle}"
+                VerticalAlignment="Center"
+                />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Text="X2:"
+                    Style="{StaticResource HeaderTextStyle}"
+                    VerticalAlignment="Center"
+                    />
+                <TextBox 
+                    Tag="Введите значение X2" 
+                    Style="{StaticResource InputTextBoxStyle}" 
+                    Text="{Binding Segment2X2, Mode=TwoWay}" 
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Margin="34,5,5,5"
+                    />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Text="Y2:"
+                    Style="{StaticResource HeaderTextStyle}"
+                    VerticalAlignment="Center"/>
+                <TextBox
+                    Tag="Введите значение Y2" 
+                    Style="{StaticResource InputTextBoxStyle}" 
+                    Text="{Binding Segment2Y2, Mode=TwoWay}"  
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Margin="34,5,5,5"
+                    />
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Разделитель -->
+        <Border BorderThickness="0,5,0,0" BorderBrush="Gray" Margin="5"/>
+
+        <!-- Кнопка "Рассчитать" -->
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock
+                Text="{Binding StatusOfLoadFile}"
+                Style="{StaticResource HeaderTextStyle}"
+                VerticalAlignment="Center"/>
+            <Button
+                Content="Загрузить файл"
+                Margin="5"
+                Width="150"
+                Command="{Binding LoadDataFromFileCommand}"
+            />
+        </StackPanel>
+
+        <!--Отображение результата вычислений -->
+        <TextBlock
+            Text="{Binding IntersectionResult}"
+            Style="{StaticResource HeaderTextStyle}"
+            Margin="5"
+            Width="300"
+            />
+        <TextBlock
+            Text="{Binding IntersectionResultX}"
+            Style="{StaticResource HeaderTextStyle}"
+            Margin="5"
+            Width="300"
+            />
+        <TextBlock
+            Text="{Binding IntersectionResultY}"
+            Style="{StaticResource HeaderTextStyle}"
+            Margin="5"
+            Width="300"
+            />
+
+    </StackPanel>
+</Window>

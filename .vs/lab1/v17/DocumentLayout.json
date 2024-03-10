@@ -1,0 +1,286 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB1D69C8-7009-497D-BFEC-0B39A7B6E9DE}|TestLab1\\TestLab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\testlab1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB1D69C8-7009-497D-BFEC-0B39A7B6E9DE}|TestLab1\\TestLab1.csproj|solutionrelative:testlab1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\utils\\dataparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\utils\\dataparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB1D69C8-7009-497D-BFEC-0B39A7B6E9DE}|TestLab1\\TestLab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\testlab1\\testlab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EB1D69C8-7009-497D-BFEC-0B39A7B6E9DE}|TestLab1\\TestLab1.csproj|solutionrelative:testlab1\\testlab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\lab1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\lab1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\obj\\Debug\\net5.0-windows7.0\\lab1_cbds2w3h_wpftmp.GlobalUsings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lab1\\obj\\Debug\\net5.0-windows7.0\\lab1_cbds2w3h_wpftmp.GlobalUsings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\model\\segment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\model\\segment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\obj\\Debug\\net8.0-windows\\lab1.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lab1\\obj\\Debug\\net8.0-windows\\lab1.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|d:\\main\\_education\\4_semestr\\ssd_software_systems_development\\lab1\\lab1\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BC94F64-0F0A-4348-8848-9E4A41849958}|lab1\\lab1.csproj|solutionrelative:lab1\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 217,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "lab1\\MainWindow.xaml",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\MainWindow.xaml",
+              "RelativeToolTip": "lab1\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-02T20:27:48.402Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\viewmodel\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "lab1\\viewmodel\\RelayCommand.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\viewmodel\\RelayCommand.cs",
+              "RelativeToolTip": "lab1\\viewmodel\\RelayCommand.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwBYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T14:55:21.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AQIAAPYAAAAAAAAAAADwvwkBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-03-10T11:16:23.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestLab1",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\TestLab1\\TestLab1.csproj",
+              "RelativeDocumentMoniker": "TestLab1\\TestLab1.csproj",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\TestLab1\\TestLab1.csproj",
+              "RelativeToolTip": "TestLab1\\TestLab1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-10T11:14:09.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "lab1",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\lab1.csproj",
+              "RelativeDocumentMoniker": "lab1\\lab1.csproj",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\lab1.csproj",
+              "RelativeToolTip": "lab1\\lab1.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-10T11:09:12.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAADcHAAAAAAAAAADwv0oHAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-03-10T11:08:10.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\viewmodel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "lab1\\viewmodel\\MainViewModel.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\viewmodel\\MainViewModel.cs",
+              "RelativeToolTip": "lab1\\viewmodel\\MainViewModel.cs",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAkwAMBAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T19:17:51.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\TestLab1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TestLab1\\UnitTest1.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\TestLab1\\UnitTest1.cs",
+              "RelativeToolTip": "TestLab1\\UnitTest1.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAAAF4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T19:15:56.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataParser.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\utils\\DataParser.cs",
+              "RelativeDocumentMoniker": "lab1\\utils\\DataParser.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\utils\\DataParser.cs",
+              "RelativeToolTip": "lab1\\utils\\DataParser.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T14:49:13.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "lab1_cbds2w3h_wpftmp.GlobalUsings.g.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\obj\\Debug\\net5.0-windows7.0\\lab1_cbds2w3h_wpftmp.GlobalUsings.g.cs",
+              "RelativeDocumentMoniker": "lab1\\obj\\Debug\\net5.0-windows7.0\\lab1_cbds2w3h_wpftmp.GlobalUsings.g.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\obj\\Debug\\net5.0-windows7.0\\lab1_cbds2w3h_wpftmp.GlobalUsings.g.cs",
+              "RelativeToolTip": "lab1\\obj\\Debug\\net5.0-windows7.0\\lab1_cbds2w3h_wpftmp.GlobalUsings.g.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T11:13:36.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "lab1\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "lab1\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T22:20:00.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\App.xaml",
+              "RelativeDocumentMoniker": "lab1\\App.xaml",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\App.xaml",
+              "RelativeToolTip": "lab1\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-04T06:47:42.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Segment.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\model\\Segment.cs",
+              "RelativeDocumentMoniker": "lab1\\model\\Segment.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\model\\Segment.cs",
+              "RelativeToolTip": "lab1\\model\\Segment.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwFoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T19:11:00.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "lab1.csproj",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\lab1.csproj",
+              "RelativeDocumentMoniker": "lab1\\lab1.csproj",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\lab1.csproj",
+              "RelativeToolTip": "lab1\\lab1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-02T19:08:13.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "lab1.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\obj\\Debug\\net8.0-windows\\lab1.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "lab1\\obj\\Debug\\net8.0-windows\\lab1.AssemblyInfo.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\obj\\Debug\\net8.0-windows\\lab1.AssemblyInfo.cs",
+              "RelativeToolTip": "lab1\\obj\\Debug\\net8.0-windows\\lab1.AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T20:44:48.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "lab1\\AssemblyInfo.cs",
+              "ToolTip": "D:\\main\\_education\\4_semestr\\SSD_software_systems_development\\lab1\\lab1\\AssemblyInfo.cs",
+              "RelativeToolTip": "lab1\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T19:08:09.126Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
