@@ -1,4 +1,6 @@
-﻿using lab1.viewmodel;
+﻿using lab1.utils;
+using lab1.viewmodel;
+using System.IO;
 using System.Windows;
 
 namespace lab1
@@ -11,7 +13,18 @@ namespace lab1
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
+            bool showStartupMessage = SettingsManager.LoadShowStartupMessageSetting();
+
+            if (showStartupMessage)
+            {
+                Loaded += MainWindow_Loaded;
+            }
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Показываем всплывающее окно
+            MainViewModel.ShowStartupInfo();
         }
     }
 }

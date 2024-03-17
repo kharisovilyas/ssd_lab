@@ -117,3 +117,4 @@ D:\main\_education\4_semestr\SSD_software_systems_development\lab1\TestLab1\obj\
 D:\main\_education\4_semestr\SSD_software_systems_development\lab1\TestLab1\obj\Debug\net8.0-windows7.0\ref\TestLab1.dll
 D:\main\_education\4_semestr\SSD_software_systems_development\lab1\TestLab1\bin\Debug\net8.0-windows7.0\Castle.Core.dll
 D:\main\_education\4_semestr\SSD_software_systems_development\lab1\TestLab1\bin\Debug\net8.0-windows7.0\Moq.dll
+D:\main\_education\4_semestr\SSD_software_systems_development\lab1\TestLab1\obj\Debug\net8.0-windows7.0\TestLab1.sourcelink.json

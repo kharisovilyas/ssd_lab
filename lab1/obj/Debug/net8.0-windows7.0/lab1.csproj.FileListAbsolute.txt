@@ -22,3 +22,4 @@ D:\main\_education\4_semestr\SSD_software_systems_development\lab1\lab1\obj\Debu
 D:\main\_education\4_semestr\SSD_software_systems_development\lab1\lab1\obj\Debug\net8.0-windows7.0\lab1.pdb
 D:\main\_education\4_semestr\SSD_software_systems_development\lab1\lab1\obj\Debug\net8.0-windows7.0\lab1.genruntimeconfig.cache
 D:\main\_education\4_semestr\SSD_software_systems_development\lab1\lab1\obj\Debug\net8.0-windows7.0\ref\lab1.dll
+D:\main\_education\4_semestr\SSD_software_systems_development\lab1\lab1\obj\Debug\net8.0-windows7.0\lab1.sourcelink.json

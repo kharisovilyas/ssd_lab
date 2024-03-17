@@ -16,11 +16,15 @@ namespace lab1.utils
             {
                 // Чтение всего содержимого файла в строку
                 string json = File.ReadAllText(filePath);
-
-                // Десериализация JSON в объект
-                MyData data = JsonConvert.DeserializeObject<MyData>(json);
-
-                return data;
+                if (json != null)
+                {
+                    MyData? data = JsonConvert.DeserializeObject<MyData>(json);
+                    return data;
+                }
+                else
+                {
+                    return null;
+                }
             }
             catch (Exception ex)
             {

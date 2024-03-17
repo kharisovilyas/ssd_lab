@@ -52,7 +52,7 @@ namespace TestLab1
             File.WriteAllText(filePath, jsonData);
 
             // Вызываем метод Parse для временного файла
-            MyData result = parser.Parse(filePath);
+            MyData? result = parser.Parse(filePath);
 
             // Проверяем, что результат не равен null
             Assert.IsNotNull(result);
@@ -83,7 +83,7 @@ namespace TestLab1
             File.WriteAllText(filePath, invalidData);
 
             // Вызываем метод Parse для временного файла
-            MyData result = parser.Parse(filePath);
+            MyData? result = parser.Parse(filePath);
 
             // Проверяем, что результат равен null, так как парсинг не удался
             Assert.IsNull(result);

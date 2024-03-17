@@ -24,11 +24,20 @@
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="FontSize" Value="14"/>
         </Style>
+
+        <BooleanToVisibilityConverter
+            x:Key="BoolToVisibilityConverter"
+            />
     </Window.Resources>
     <Window.DataContext>
         <local:MainViewModel/>
     </Window.DataContext>
     <StackPanel>
+        <Menu>
+            <MenuItem Header="Информация о разработчике">
+                <MenuItem Header="Показать информацию" Command="{Binding ShowStartupInfoCommand}"/>
+            </MenuItem>
+        </Menu>
         <!-- Заголовки и поля ввода для отрезка 1 -->
         <TextBlock Text="Отрезок 1" Style="{StaticResource HeaderTextStyle}"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -192,7 +201,8 @@
 
         <!-- Кнопка "Рассчитать" -->
 
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center">
             <TextBlock
                 Text="{Binding StatusOfLoadFile}"
                 Style="{StaticResource HeaderTextStyle}"
@@ -224,6 +234,18 @@
             Margin="5"
             Width="300"
             />
+        
+        <!-- Кнопка сохранения в файл -->
+        <Button
+            Content="Сохранить результат"
+            Command="{Binding SaveInFileCommand}"
+            Margin="5"
+            Width="250"
+            Visibility="{Binding IsSaveButtonVisible,
+            Converter={StaticResource BoolToVisibilityConverter}
+            }"
+            />
+
 
     </StackPanel>
 </Window>

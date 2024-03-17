@@ -20,12 +20,18 @@ namespace lab1.viewmodel
 
         public event EventHandler CanExecuteChanged
         {
-            add => CommandManager.RequerySuggested += value;
-            remove => CommandManager.RequerySuggested -= value;
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
         }
 
         public bool CanExecute(object parameter) => _canExecute?.Invoke() ?? true;
 
-        public void Execute(object parameter) => _execute();
+        public void Execute(object parameter)
+        {
+            if (_execute != null)
+            {
+                _execute();
+            }
+        }
     }
 }

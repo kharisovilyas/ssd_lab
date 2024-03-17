@@ -27,6 +27,9 @@ namespace lab1.viewmodel
         private string _intersectionResultY;
         private string _statusOfLoadFile;
 
+
+        private bool _isSaveButtonVisible;
+
         public double Segment1X1
         {
             get { return _segment1X1; }
@@ -34,7 +37,7 @@ namespace lab1.viewmodel
             {
                 _segment1X1 = value;
                 OnPropertyChanged();
-                CalculateClick();
+                Calculate();
             }
         }
         public double Segment1X2
@@ -44,7 +47,7 @@ namespace lab1.viewmodel
             {
                 _segment1X2 = value;
                 OnPropertyChanged();
-                CalculateClick();
+                Calculate();
             }
         }
         public double Segment1Y1
@@ -54,7 +57,7 @@ namespace lab1.viewmodel
             {
                 _segment1Y1 = value;
                 OnPropertyChanged();
-                CalculateClick();
+                Calculate();
             }
         }
         public double Segment1Y2
@@ -64,7 +67,7 @@ namespace lab1.viewmodel
             {
                 _segment1Y2 = value;
                 OnPropertyChanged();
-                CalculateClick();
+                Calculate();
             }
 
         }
@@ -84,7 +87,7 @@ namespace lab1.viewmodel
             {
                 _segment2X2 = value;
                 OnPropertyChanged();
-                CalculateClick();
+                Calculate();
             }
         }
         public double Segment2Y1
@@ -94,7 +97,7 @@ namespace lab1.viewmodel
             {
                 _segment2Y1 = value;
                 OnPropertyChanged();
-                CalculateClick();
+                Calculate();
             }
         }
         public double Segment2Y2
@@ -104,7 +107,7 @@ namespace lab1.viewmodel
             {
                 _segment2Y2 = value;
                 OnPropertyChanged();
-                CalculateClick();
+                Calculate();
             }
         }
 
@@ -148,25 +151,71 @@ namespace lab1.viewmodel
             }
         }
 
+
+        public bool IsSaveButtonVisible
+        {
+            get { return _isSaveButtonVisible; }
+            set
+            {
+                _isSaveButtonVisible = value;
+                OnPropertyChanged();
+            }
+        }
+
         public event PropertyChangedEventHandler? PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
         {
-            if (PropertyChanged != null)
+            if (PropertyChanged != null){
                 PropertyChanged(this, new PropertyChangedEventArgs(prop));
+            }
         }
 
 
         // Команда для обработки нажатия на кнопку "Рассчитать"
-        public ICommand CalculateClickCommand { get; private set; }
-
+        public ICommand CalculateCommand { get; private set; }
         public ICommand LoadDataFromFileCommand { get; private set; }
+        public ICommand SaveInFileCommand { get; private set; }
+        public ICommand ShowStartupInfoCommand { get; }
+
+        public static void ShowStartupInfo()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                "Добро пожаловать! Это информация при запуске программы." +
+                "\nРабота №1. Алгоритмы и структуры данных\nПервая лабораторная работа предназначена для приобретения практического опыта в создании простейшего приложения с использованием языка программирования С#.\n" +
+                "\nЗадание 16 варианта: Для заданных отрезков на плоскости определить, пересекаются ли они. Найти координаты точки пересечения. " +
+                "\n\nПоказывать ли данное сообщение в будущем при запуске программы ?" +
+                "\n\nЕсли вы указали нет, то сможете найти инфомацию в разделе Информация о разработчике",
+                "Программу разработал Харисов Ильяс Ренатович, 424 группа",
+                MessageBoxButton.YesNo);
+
+            // Если нажата кнопка "ОК", ничего не делаем
+            if (result == MessageBoxResult.OK)
+            {
+                SettingsManager.SaveShowStartupMessageSetting(true);
+            }
+            // Если нажата кнопка "Не показывать", сохраняем настройку
+            else if (result == MessageBoxResult.Cancel)
+            {
+                // Сохраняем настройку, чтобы больше не показывать всплывающее окно
+                SettingsManager.SaveShowStartupMessageSetting(false);
+            }
+        }
 
         public MainViewModel()
         {
+
+            IsSaveButtonVisible = false;
             StatusOfLoadFile = "Файл не загружен";
+            _intersectionResultX = "";
+            _intersectionResultY = "";
+            _intersectionResult = "";
+            _statusOfLoadFile = "";
+
             // Создаем команду и передаем в нее метод, который будет вызываться при выполнении команды
-            CalculateClickCommand = new RelayCommand(CalculateClick);
+            CalculateCommand = new RelayCommand(Calculate);
             LoadDataFromFileCommand = new RelayCommand(LoadDataFromFile);
+            SaveInFileCommand = new RelayCommand(SaveInFile);
+            ShowStartupInfoCommand = new RelayCommand(ShowStartupInfo);
         }
 
         private void LoadDataFromFile()
@@ -190,7 +239,7 @@ namespace lab1.viewmodel
                 try
                 {
                     DataParser parser = new DataParser();
-                    MyData data = parser.Parse(filePath);
+                    MyData? data = parser.Parse(filePath);
 
                     if (data != null)
                     {
@@ -205,6 +254,7 @@ namespace lab1.viewmodel
                         Segment2Y2 = data.segment2y2;
 
                         StatusOfLoadFile = "Файл загружен успешно";
+                        IsSaveButtonVisible = true;
                         // Вызываем метод расчета пересечения
                         CalculateIntersection(Segment1X1, Segment1Y1, Segment1X2, Segment1Y2, Segment2X1, Segment2Y1, Segment2X2, Segment2Y2);
                     }
@@ -223,10 +273,9 @@ namespace lab1.viewmodel
         }
 
 
-        // Метод, который будет вызываться при нажатии на кнопку
-        private void CalculateClick()
+        // Метод, разчитывающий пересечение отрезков
+        private void Calculate()
         {
-            // Ваша логика обработки нажатия на кнопку "Рассчитать"
             CalculateIntersection(Segment1X1, Segment1Y1, Segment1X2, Segment1Y2, Segment2X1, Segment2Y1, Segment2X2, Segment2Y2);
         }
 
@@ -235,6 +284,7 @@ namespace lab1.viewmodel
         {
             try
             {
+                IsSaveButtonVisible = true;
                 // Создание отрезков и расчет пересечения
                 Segment segment1 = new Segment(segment1X1, segment1Y1, segment1X2, segment1Y2);
                 Segment segment2 = new Segment(segment2X1, segment2Y1, segment2X2, segment2Y2);
@@ -254,8 +304,42 @@ namespace lab1.viewmodel
             }
             catch (Exception exeption)
             {
-                // Обработка исключений (например, вывод ошибки)
+                Console.WriteLine(exeption);
+                MessageBox.Show($"Произошла непредвиденная ошибка", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        public void SaveInFile()
+        {
+            // Диалог сохранения файла
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Текстовые файлы (*.txt)|*.txt"; // Устанавливаем фильтр для файлов
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                // Получение пути к выбранному файлу
+                string filePath = saveFileDialog.FileName;
+
+                try
+                {
+                    using (StreamWriter writer = new StreamWriter(filePath))
+                    {
+                        writer.WriteLine($"Отрезок 1 с координатами начала: X1: {Segment1X1}; Y1: {Segment1Y1}");
+                        writer.WriteLine($"И конца: X2: {Segment1X2}; Y2: {Segment1Y2}");
+                        writer.WriteLine($"И Отрезок 2 с координатами начала: X1: {Segment2X1}; Y1: {Segment2Y1}");
+                        writer.WriteLine($"И конца: X2: {Segment2X2}; Y2: {Segment2Y2}");
+                        writer.WriteLine(IntersectionResult);
+                        if(IntersectionResult == "Отрезки пересекаются в точке:")
+                            writer.Write($"X: {IntersectionResultX}; Y: {IntersectionResultY}");
+                    }
+
+                    MessageBox.Show("Результат сохранен успешно", "Сохранение", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка при сохранении файла: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+
     }
 }
